@@ -1,0 +1,42 @@
+{
+    "name": "evista/wp-controller",
+    "description": "Object Oriented Controller Plugin for WordPress",
+    "keywords": [
+        "evista",
+        "nutshell"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Balint Sera",
+            "email": "sera.balint@e-vista.hu",
+            "homepage": "http://evista-agency.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Evista\\Controller\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Evista\\Controller\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
